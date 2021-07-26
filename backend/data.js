@@ -8,7 +8,7 @@ export default {
       image: 'images/product-1.jpg',
       price: 60,
       brand: 'Hiskywin',
-      rating: 4.5,
+      rating: 1,
       numReviews: 10,
       countInStock: 6,
     },
@@ -21,7 +21,7 @@ export default {
       brand: 'Nike',
       rating: 5,
       numReviews: 51,
-      countInStock: 0,
+      countInStock: 2,
     },
     {
       _id: '3',
