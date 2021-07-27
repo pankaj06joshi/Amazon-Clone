@@ -1,6 +1,6 @@
 import { getProduct } from '../api';
 import Rating from '../components/Rating';
-import {parseRequestUrl} from '../utils';
+import {hideLoading, parseRequestUrl, showLoading} from '../utils';
 
 const ProductScreen = {
   after_render: () =>{
@@ -11,10 +11,12 @@ const ProductScreen = {
   },
   render: async () =>{
     const request = parseRequestUrl();
+    showLoading();
     const product = await getProduct(request.id);
     if(product.error){
       return `<div>${product.error}</div>`
     }
+    hideLoading();
     return `<div class="content">
     <div class="back-to-result">
       <a href="/#/">Back to result </a>

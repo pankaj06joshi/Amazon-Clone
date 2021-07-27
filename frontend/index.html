@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Amazona</title>
-    
-</head>
-<body>
+  </head>
+  <body>
+    <div class="overlay" id="loading-overlay">Loading...</div>
+    <div class="overlay" id="message-overlay"></div>
     <div class="grid-container">
-        <header>
-            <div class="brand">
-                <a href="/#/">Amazona</a>
-            </div>
-            <div>
-                <a href="/#/signin">Sign-in</a>
-                <a href="/#/cart">Cart</a>
-            </div>
-        </header>
-        <main id="main-container" >
-         <!-- <ul class="products">
+      <header id="header-container"></header>
+      <main id="main-container">
+        <!-- <ul class="products">
                     <li>
                         <div class="product">
                             <a href="/#/product/1">
@@ -41,11 +40,9 @@
                         </div>
                     </li>
                 </ul> -->
-        </main>
-        <footer>
-            All right reserved @2021
-        </footer>
+      </main>
+      <footer>All right reserved @2021</footer>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
