@@ -2,9 +2,11 @@ import Header from "./components/Header";
 import CartScreen from "./screens/CartScreen";
 import Error404Screen from "./screens/Error404Screen";
 import HomeScreen from "./screens/HomeScreen";
+import PaymentScreen from "./screens/PaymentScreen";
 import ProductScreen from "./screens/ProductScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import RegisterScreen from "./screens/RegisterScreen ";
+import ShippingScreen from "./screens/shippingScreen";
 import SigninScreen from "./screens/SigninScreen";
 import { hideLoading, parseRequestUrl, showLoading } from "./utils";
 
@@ -16,6 +18,8 @@ const routes = {
   "/signin": SigninScreen,
   "/register": RegisterScreen,
   "/profile": ProfileScreen,
+  "/shipping": ShippingScreen,
+  "/payment": PaymentScreen,
 };
 
 const router = async () => {
@@ -31,7 +35,7 @@ const router = async () => {
   await Header.after_render();
   const main = document.getElementById("main-container");
   main.innerHTML = await screen.render();
-  if(screen.after_render) await screen.after_render();
+  if (screen.after_render) await screen.after_render();
   hideLoading();
 };
 
