@@ -9,11 +9,13 @@ import ProfileScreen from "./screens/ProfileScreen";
 import RegisterScreen from "./screens/RegisterScreen ";
 import ShippingScreen from "./screens/shippingScreen";
 import SigninScreen from "./screens/SigninScreen";
+import OrderScreen from "./screens/OrderScreen";
 import { hideLoading, parseRequestUrl, showLoading } from "./utils";
 
 const routes = {
   "/": HomeScreen,
   "/product/:id": ProductScreen,
+  "/order/:id": OrderScreen,
   "/cart/:id": CartScreen,
   "/cart": CartScreen,
   "/signin": SigninScreen,
